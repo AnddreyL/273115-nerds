@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс</title>
+  </head>
+  <body>
+    <header class="main-header">
+      <div class="container">
+        <div class="main-header__logo">
+          <a href="index.html">
+            <img src="#" width="" height="" alt="Нёрдс">
+          </a>
+        </div>
+        <nav class="main-header__nav">
+          <ul>
+            <li>
+              <a href="#">Студия</a>
+            </li>
+            <li>
+              <a href="#">Клиенты</a>
+            </li>
+            <li>
+              <a>Магазин</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="main-header__cart">
+          <a class="cart" href="#">Корзина</a>
+        </div>
+      </div>
+    </header>
+    <main>
+      <h1>Магазин готовых шаблонов</h1>
+      <div class="container">
+        <section class="filter">
+          <form action="https://echo.htmlacademy.ru" method="post">
+            <div class="filter__price">
+              <b>Стоимость:</b><br>
+              <label for="from-id">От</label>
+              <input type="text" name="from" id="from-id">
+              <label for="till-id">До</label>
+              <input type="text" name="till" id="till-id">
+            </div>
+            <div class="filter__grid">
+              <input type="radio" name="grid-option" id="adaptive" checked>
+              <label for="adaptive">Адаптивная</label><br>
+              <input type="radio" name="grid-option" id="fixed">
+              <label for="fixed">Фиксированная</label><br>
+              <input type="radio" name="grid-option" id="rubber">
+              <label for="rubber">Резиновая</label>
+            </div>
+            <div class="filter__features">
+              <input type="checkbox" name="slider" id="slider-id" checked>
+              <label for="slider-id">Слайдер</label><br>
+              <input type="checkbox" name="block" id="block-id">
+              <label for="block-id">Блок приемуществ</label><br>
+              <input type="checkbox" name="news" id="news-id" checked>
+              <label for="news-id">Новости</label><br>
+              <input type="checkbox" name="gallery" id="gallery-id">
+              <label for="gallery-id">Галерея</label><br>
+              <input type="checkbox" name="cart" id="cart-id">
+              <label for="cart-id">Корзина</label>
+            </div>
+            <button type="submit">Показать</button>
+          </form>
+        </section>
+        <section class="result">
+          <b>Сортировать</b>
+          <div class="result__sort">
+            <a class="sort__option" href="#">По цене</a>
+            <a class="sort__option" href="#">По типу</a>
+            <a class="sort__option" href="#">По названию</a>
+          </div>
+          <div class="result__arrows">
+            <a class="arrows__option" href="#">Ввверх</a>
+            <a class="arrows__option" href="#">Вниз</a>
+          </div>
+          <article class="card">
+            <div class="card__img">
+              <img src="#" width="" height="" alt="Sedona">
+            </div>
+            <div class="card__inner">
+              <a class="card__name" href="#">Sedona</a>
+              <p>Информационный сайт для туристов</p>
+              <a class="btn card__btn" href="#">9900 руб.</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__img">
+              <img src="#" width="" height="" alt="Pink app">
+            </div>
+            <div class="card__inner">
+              <a class="card__name" href="#">Pink app</a>
+              <p>Продуктовый лендинг приложения для iOS и Android</p>
+              <a class="btn card__btn" href="#">9900 руб.</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__img">
+              <img src="#" width="" height="" alt="Barbershop">
+            </div>
+            <div class="card__inner">
+              <a class="card__name" href="#">Barbershop</a>
+              <p>Сайт салоны красоты. Для мужчин, да.</p>
+              <a class="btn card__btn" href="#">9900 руб.</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__img">
+              <img src="#" width="" height="" alt="Mishka">
+            </div>
+            <div class="card__inner">
+              <a class="card__name" href="#">Mishka</a>
+              <p>Интернет-магазин вязаных игрушек</p>
+              <a class="btn card__btn" href="#">9900 руб.</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__img">
+              <img src="#" width="" height="" alt="A plus">
+            </div>
+            <div class="card__inner">
+              <a class="card__name" href="#">A plus</a>
+              <p>Лендинг курсов повышения квалификации</p>
+              <a class="btn card__btn" href="#">9900 руб.</a>
+            </div>
+          </article>
+          <article class="card">
+            <div class="card__img">
+              <img src="#" width="" height="" alt="Кваст">
+            </div>
+            <div class="card__inner">
+              <a class="card__name" href="#">Кваст</a>
+              <p>Промо-сайт производителя крафтового кваса</p>
+              <a class="btn card__btn" href="#">9900 руб.</a>
+            </div>
+          </article>
+          <div class="result__controls">
+            <a href="">1</a>
+            <a href="">2</a>
+            <a href="">3</a>
+            <button class="btn" type="button">Следующая</button>
+          </div>
+        </section>
+      </div>
+    </main>
+    <footer class="page-footer">
+      <div class="page-footer__top">
+        <div class="page-footer__contacts container">
+          <b>Nёrds design studio</b>
+          <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
+          <p>тел. +7(812) 275-75-75</p>
+          <a class="btn" href="#">Напишите нам</a>
+        </div>
+      </div>
+      <div class="page-footer__bottom container">
+        <div class="page-footer__social">
+          <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
+          <a class="social-btn social-btn-fb" href="#">Фейсбук</a>
+          <a class="social-btn social-btn-inst" href="#">Инстаграм</a>
+        </div>
+        <div class="page-footer__slogan">
+          <b>Давайте дружить, это выгодно!</b>
+          <p>Скидка 10% для друзей из социальных сетей.</p>
+        </div>
+      </div>
+    </footer>
+  </body>
+</html>
