@@ -1,0 +1,20 @@
+body {
+  font-size: 16px;
+  line-height: 24px;
+  color: #283136;
+  font-weight: 400;
+  font-family: "Roboto", "Arial", sans-serif;
+}
+
+.catalog-title {
+  font-size: 55px;
+  line-height: 55px;
+  color: #000;
+}
+
+.services-item__name {
+  font-size: 24px;
+  line-height: 30px;
+  color: #000;
+  font-weight: 700;
+}
