@@ -7,22 +7,22 @@
   </head>
   <body>
     <header class="main-header">
-      <div class="container">
+      <div class="container clearfix">
         <div class="main-header__logo">
           <img src="img/nerds-logo.png" width="160" height="65" alt="Нёрдс">
         </div>
         <nav class="main-header__nav">
           <ul>
-            <li>
+            <li class="main-header__item">
               <a href="#">Студия</a>
             </li>
-            <li>
+            <li class="main-header__item">
               <a href="#">Клиенты</a>
             </li>
-            <li>
+            <li class="main-header__item">
               <a href="#">Магазин</a>
             </li>
-            <li>
+            <li class="main-header__item">
               <a href="#">Контакты</a>
             </li>
           </ul>
@@ -59,26 +59,28 @@
           </div>
         </div>
       </div>
-      <section class="services container">
-        <div class="services-item">
-          <b class="services-item__name">Веб-сайты</b>
-          <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-          <a class="btn" href="#">Заказать</a>
-        </div>
-        <div class="services-item">
-          <b class="services-item__name">Приложения</b>
-          <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-          <a class="btn" href="#">Заказать</a>
-        </div>
-        <div class="services-item">
-          <b class="services-item__name">Презентации</b>
-          <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-          <a class="btn" href="#">Заказать</a>
-        </div>
-      </section>
-      <div class="index-content container">
+      <div class="container">
+        <section class="services clearfix">
+          <div class="services-item">
+            <h2 class="services-item__name">Веб-сайты</h2>
+            <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+            <a class="btn" href="#">Заказать</a>
+          </div>
+          <div class="services-item">
+            <h2 class="services-item__name">Приложения</h2>
+            <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+            <a class="btn" href="#">Заказать</a>
+          </div>
+          <div class="services-item">
+            <h2 class="services-item__name">Презентации</h2>
+            <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+            <a class="btn" href="#">Заказать</a>
+          </div>
+        </section>
+      </div>
+      <div class="container index-content clearfix">
         <div class="index-content-left">
-          <b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b>
+          <p><b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b></p>
           <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
           <div class="index-content-services">
             <b>Выполняем заказы на разработку:</b>
@@ -113,44 +115,46 @@
           </ul>
         </div>
       </div>
-      <section class="products-logo container">
-        <ul>
-          <li>
-            <a class="htmlacademy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
-              <img src="img/logo-1.png" width="199" height="68" alt="Htmlacademy">
-            </a>
-          </li>
-          <li>
-            <a class="borodinski-logo" href="#">
-              <img src="img/logo-2.png" width="209" height="90" alt="Borodinski">
-            </a>
-          </li>
-          <li>
-            <a class="pink-logo" href="#">
-              <img src="img/logo-3.png" width="185" height="52" alt="Pink">
-            </a>
-          </li>
-          <li>
-            <a class="mishka-logo" href="#">
-              <img src="img/logo-4.png" width="173" height="84" alt="Mishka">
-            </a>
-          </li>
-        </ul>
-      </section>
+      <div class="container">
+        <section class="products-logo">
+          <ul>
+            <li class="products-logo__item">
+              <a class="htmlacademy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
+                <img src="img/logo-1.png" width="199" height="68" alt="Htmlacademy">
+              </a>
+            </li>
+            <li class="products-logo__item">
+              <a class="borodinski-logo" href="#">
+                <img src="img/logo-2.png" width="209" height="90" alt="Borodinski">
+              </a>
+            </li>
+            <li class="products-logo__item">
+              <a class="pink-logo" href="#">
+                <img src="img/logo-3.png" width="185" height="52" alt="Pink">
+              </a>
+            </li>
+            <li class="products-logo__item">
+              <a class="mishka-logo" href="#">
+                <img src="img/logo-4.png" width="173" height="84" alt="Mishka">
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
     </main>
     <footer class="page-footer">
       <div class="page-footer__top">
         <div class="page-footer__map">
           <img src="img/map.jpg" width="1440" height="416" alt="Улица Большая Конюшенная, дом 19/8">
         </div>
-        <div class="page-footer__contacts container">
+        <div class="page-footer__contacts">
           <b>Nёrds design studio</b>
-          <p>191186, Санкт-Петербург,<br> ул. Б. Конюшенная, д. 19/8</p>
+          <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
           <p>тел. +7(812) 275-75-75</p>
           <a class="btn" href="#">Напишите нам</a>
         </div>
       </div>
-      <div class="page-footer__bottom container">
+      <div class="page-footer__bottom container clearfix">
         <div class="page-footer__social">
           <a class="social-btn social-btn-vk" href="#">Вконтакте</a>
           <a class="social-btn social-btn-fb" href="#">Фейсбук</a>

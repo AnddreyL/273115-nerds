@@ -1,4 +1,8 @@
 body {
+  min-width: 1440px;
+  min-height: 2476px;
+  margin: 0;
+  padding: 0;
   font-size: 16px;
   line-height: 24px;
   color: #283136;
@@ -6,7 +10,7 @@ body {
   font-family: "Roboto", "Arial", sans-serif;
 }
 
-.catalog-title {
+.catalog-top__title {
   font-size: 55px;
   line-height: 55px;
   color: #000;
@@ -18,3 +22,288 @@ body {
   color: #000;
   font-weight: 700;
 }
+
+.container {
+  width: 1160px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.clearfix::after {
+  content: "";
+  display:table;
+  clear: both;
+}
+
+.main-header__logo {
+  float: left;
+  width: 160px;
+  height: 65px;
+  margin-top: 49px;
+  
+  /* только для оформления сетки */
+  min-height: 132px;
+}
+
+.main-header__nav {
+  float: left;
+  
+  /* только для оформления сетки */
+  min-height: 132px;
+}
+
+.main-header__nav ul {
+  list-style-type: none;
+  font-size: 0;
+}
+
+.main-header__item {
+  display: inline-block;
+ /* vertical-align: ; */
+  font-size: 16px;
+}
+
+.main-header__cart {
+  float: right;
+  
+  /* только для оформления сетки */
+  min-height: 132px;
+}
+
+.slider {
+  margin-bottom: 80px;
+  
+  /* только для оформления сетки */
+  min-height: 413px;
+}
+
+.slider__slide:nth-child(n+2) {
+  display: none;
+}
+
+.services {
+  border-bottom: 2px solid #eeeeee;
+  
+  /* только для оформления сетки */
+  min-height: 429px;
+}
+
+.services-item {
+  float: left;
+  width: 300px;
+  margin-right: 100px;
+  
+  /* только для оформления сетки */
+  min-height: 347px;
+}
+
+.services-item:last-child {
+  margin-right: 0;
+}
+
+.index-content {
+  margin-bottom: 74px;
+  /* border-bottom: 2px solid #eeeeee; */
+  
+  /* только для оформления сетки */
+  min-height: 528px;
+}
+
+.index-content-left {
+  float: left;
+  width: 660px;
+  margin-top: 82px;
+  
+  /* только для оформления сетки */
+  min-height: 374px;
+}
+
+.index-content-right {
+  float: right;
+  width: 360px;
+  margin-top: 42px;
+  
+  /* только для оформления сетки */
+  min-height: 412px;
+}
+
+.products-logo {
+  border-top: 2px solid #eeeeee;
+  border-bottom: 2px solid #eeeeee;
+  
+  /* только для оформления сетки */
+  min-height: 180px;
+}
+
+.products-logo ul {
+  font-size: 0;
+  list-style-type: none;
+}
+
+.products-logo__item {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.page-footer {
+  margin-top: 80px;
+}
+
+.page-footer__top {
+  position: relative;
+}
+
+.page-footer__map {
+  width: 1440px;
+  height: 416px;
+}
+
+.page-footer__contacts {
+  position: absolute;
+  left: 0;
+  top: 0;
+  display: inline-block;
+}
+
+.page-footer__bottom {
+  padding: 70px 0;
+}
+
+.page-footer__social {
+  float: left;
+  width: 300px;
+  margin-right: 100px;
+  
+  /* только для оформления сетки */
+  min-height: 89px;
+}
+
+.page-footer__slogan {
+  float: left;
+  width: 660px;
+  
+  /* только для оформления сетки */
+  min-height: 89px;
+}
+
+.catalog-top {
+  margin-bottom: 57px;
+  
+  /* только для оформления сетки */
+  min-height: 223px;
+}
+
+.filter {
+  float: left;
+  width: 300px;
+  
+  /* только для оформления сетки */
+  min-height: 780px;
+}
+
+.filter__inner {
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+.filter__title {
+  padding: 0;
+}
+
+.filter__inner ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+.result {
+  float: right;
+  width: 760px;
+  
+  /* только для оформления сетки */
+  min-height: 2110px;
+}
+
+.result-top {
+  margin-bottom: 60px;
+}
+
+.result-top__inner {
+  
+  /* только для оформления сетки */
+  min-height: 18px;
+}
+
+/* Наверное нужно переделать в инлайнблоки  result-top , а может нет*/
+
+.result-top__inner--title {
+  float: left;
+  width: 360px;
+  margin-right: 40px;
+}
+
+.result-top__inner--sort {
+  float: left;
+  width: 300px;
+}
+
+.result-top__inner--arrows {
+  float: right;
+  width: 40px;
+  font-size: 0;
+}
+
+.result-body {
+  margin-bottom: 24px;
+}
+
+.card {
+  position: relative;
+  float: left;
+  width: 360px;
+  margin-right: 40px;
+  margin-bottom: 36px;
+}
+
+.card:nth-child(even) {
+  margin-right: 0;
+}
+
+.card__inner {
+  position: absolute;
+  bottom: 0;
+}
+
+.result-bottom a {
+  display: inline-block;
+  min-width: 50px;
+  height: 50px;
+  line-height: 50px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
