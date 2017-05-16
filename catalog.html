@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -21,8 +23,8 @@
             <li class="main-header__item">
               <a href="#">Клиенты</a>
             </li>
-            <li class="main-header__item">
-              <a href="#">Магазин</a>
+            <li class="main-header__item disabled">
+              <a>Магазин</a>
             </li>
             <li class="main-header__item">
               <a href="#">Контакты</a>
@@ -30,15 +32,15 @@
           </ul>
         </nav>
         <div class="main-header__cart">
-          <a class="cart" href="#">Корзина</a>
+          <a href="#">Корзина</a>
         </div>
       </div>
-    </header>
-    <main>
       <div class="catalog-top">
         <h1 class="catalog-top__title">Магазин готовых шаблонов</h1>
       </div>
-      <div class="container clearfix">
+    </header>
+    <main class="container">
+      <div class="clearfix">
         <aside class="filter">
           <form action="https://echo.htmlacademy.ru" method="get">
             <fieldset class="filter__inner filter__inner--price">
@@ -101,15 +103,15 @@
         </aside>
         <section class="result">
           <div class="result-top clearfix">
-            <b class="result-top__inner result-top__inner--title">Сортировать</b>
+            <b class="result-top__inner result-top__inner--title">Сортировать:</b>
             <div class="result-top__inner result-top__inner--sort">
-              <a class="sort__option" href="#">По цене</a>
-              <a class="sort__option" href="#">По типу</a>
-              <a class="sort__option" href="#">По названию</a>
+              <a class="result-top__option result-top__disabled">По цене</a>
+              <a class="result-top__option" href="#">По типу</a>
+              <a class="result-top__option" href="#">По названию</a>
             </div>
             <div class="result-top__inner result-top__inner--arrows">
-              <a class="arrows__option" href="#">Ввверх</a>
-              <a class="arrows__option" href="#">Вниз</a>
+              <a class="result-top__arrow result-top__arrow--down result-top__disabled">Вниз</a>
+              <a class="result-top__arrow result-top__arrow--up" href="#">Вверх</a>
             </div>
           </div>
           <div class="result-body clearfix">
@@ -117,68 +119,90 @@
               <div class="card__img">
                 <img src="img/img-sedona.jpg" width="360" height="576" alt="Sedona">
               </div>
-              <div class="card__inner">
-                <h2><a class="card__name" href="#">Sedona</a></h2>
-                <p>Информационный сайт для туристов</p>
-                <a class="btn card__btn" href="#">9900 руб.</a>
+              <div class="card__shadow">
+                <div class="card__inner">
+                  <h2 class="card__name"><a href="#">Sedona</a></h2>
+                  <p>Информационный сайт<br>для туристов</p>
+                  <a class="btn" href="#">9 900 руб.</a>
+                </div>
               </div>
             </article>
             <article class="card">
               <div class="card__img">
                 <img src="img/img-pink.jpg" width="360" height="576" alt="Pink app">
               </div>
-              <div class="card__inner">
-                <h2><a class="card__name" href="#">Pink app</a></h2>
-                <p>Продуктовый лендинг приложения для iOS и Android</p>
-                <a class="btn card__btn" href="#">9900 руб.</a>
+              <div class="card__shadow">
+                <div class="card__inner">
+                  <h2 class="card__name"><a href="#">Pink app</a></h2>
+                  <p>Продуктовый лендинг<br>приложения для iOS и Android</p>
+                  <a class="btn" href="#">9 900 руб.</a>
+                </div>
               </div>
             </article>
             <article class="card">
               <div class="card__img">
                 <img src="img/img-barbershop.jpg" width="360" height="576" alt="Barbershop">
               </div>
-              <div class="card__inner">
-                <h2><a class="card__name" href="#">Barbershop</a></h2>
-                <p>Сайт салоны красоты. Для мужчин, да.</p>
-                <a class="btn card__btn" href="#">9900 руб.</a>
+              <div class="card__shadow">
+                <div class="card__inner">
+                  <h2 class="card__name"><a href="#">Barbershop</a></h2>
+                  <p>Сайт салоны красоты.<br>Для мужчин, да.</p>
+                  <a class="btn" href="#">9 900 руб.</a>
+                </div>
               </div>
             </article>
             <article class="card">
               <div class="card__img">
                 <img src="img/img-mishka.jpg" width="360" height="576" alt="Mishka">
               </div>
-              <div class="card__inner">
-                <h2><a class="card__name" href="#">Mishka</a></h2>
-                <p>Интернет-магазин вязаных игрушек</p>
-                <a class="btn card__btn" href="#">9900 руб.</a>
+              <div class="card__shadow">
+                <div class="card__inner">
+                  <h2 class="card__name"><a href="#">Mishka</a></h2>
+                  <p>Интернет-магазин<br>вязаных игрушек</p>
+                  <a class="btn" href="#">9 900 руб.</a>
+                </div>
               </div>
             </article>
             <article class="card">
               <div class="card__img">
                 <img src="img/img-aplus.jpg" width="360" height="576" alt="A plus">
               </div>
-              <div class="card__inner">
-                <h2><a class="card__name" href="#">A plus</a></h2>
-                <p>Лендинг курсов повышения квалификации</p>
-                <a class="btn card__btn" href="#">9900 руб.</a>
+              <div class="card__shadow">
+                <div class="card__inner">
+                  <h2 class="card__name"><a href="#">A plus</a></h2>
+                  <p>Лендинг курсов повышения<br>квалификации</p>
+                  <a class="btn" href="#">9 900 руб.</a>
+                </div>
               </div>
             </article>
             <article class="card">
               <div class="card__img">
                 <img src="img/img-kvast.jpg" width="360" height="576" alt="Кваст">
               </div>
-              <div class="card__inner">
-                <h2><a class="card__name" href="#">Кваст</a></h2>
-                <p>Промо-сайт производителя крафтового кваса</p>
-                <a class="btn card__btn" href="#">9900 руб.</a>
+              <div class="card__shadow">
+                <div class="card__inner">
+                  <h2 class="card__name"><a href="#">Кваст</a></h2>
+                  <p>Промо-сайт производителя<br>крафтового кваса</p>
+                  <a class="btn" href="#">9 900 руб.</a>
+                </div>
               </div>
             </article>
           </div>
           <div class="result-bottom">
-            <a href="">1</a>
-            <a href="">2</a>
-            <a href="">3</a>
-            <a class="btn" href="">Следующая</a>
+            <ul>
+              <li>
+                <a class="btn result-bottom__disabled">1</a>
+              </li>
+              <li>
+                <a class="btn" href="#">2</a>
+              </li>
+              <li>
+                <a class="btn" href="#">3</a>
+              </li>
+              <li>
+                <a class="btn btn__next" href="#">Следующая</a>
+              </li>
+            </ul>
           </div>
         </section>
       </div>
@@ -190,8 +214,8 @@
         </div>
         <div class="page-footer__contacts">
           <b>Nёrds design studio</b>
-          <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <p>тел. +7(812) 275-75-75</p>
+          <p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
+          <p>тел. +7 (812) 275-75-75</p>
           <a class="btn" href="#">Напишите нам</a>
         </div>
       </div>

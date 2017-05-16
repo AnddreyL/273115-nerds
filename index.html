@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Нёрдс</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:400,500,700&amp;subset=cyrillic" rel="stylesheet">
+    <link href="css/normalize.css" rel="stylesheet">
     <link href="css/style.css" rel="stylesheet">
   </head>
   <body>
@@ -28,11 +30,9 @@
           </ul>
         </nav>
         <div class="main-header__cart">
-          <a class="cart" href="#">Корзина</a>
+          <a href="#">Корзина</a>
         </div>
       </div>
-    </header>
-    <main>
       <div class="slider">
         <div class="container">
           <div class="slider__controls">
@@ -59,31 +59,31 @@
           </div>
         </div>
       </div>
-      <div class="container">
-        <section class="services clearfix">
-          <div class="services-item">
-            <h2 class="services-item__name">Веб-сайты</h2>
-            <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
-            <a class="btn" href="#">Заказать</a>
-          </div>
-          <div class="services-item">
-            <h2 class="services-item__name">Приложения</h2>
-            <p>Покорите топ-10 приложений в AppStore и Google Play</p>
-            <a class="btn" href="#">Заказать</a>
-          </div>
-          <div class="services-item">
-            <h2 class="services-item__name">Презентации</h2>
-            <p>Вы даже не подозреваете, насколько вы изумительны!</p>
-            <a class="btn" href="#">Заказать</a>
-          </div>
-        </section>
-      </div>
-      <div class="container index-content clearfix">
-        <div class="index-content-left">
-          <p><b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b></p>
-          <p>Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
-          <div class="index-content-services">
-            <b>Выполняем заказы на разработку:</b>
+    </header>
+    <main class="container">
+      <section class="services clearfix">
+        <div class="services-item services-item__sites">
+          <h2 class="services-item__name">Веб-сайты</h2>
+          <p>Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+          <a class="btn" href="#">Заказать</a>
+        </div>
+        <div class="services-item services-item__apps">
+          <h2 class="services-item__name">Приложения</h2>
+          <p>Покорите топ-10 приложений в AppStore и Google Play</p>
+          <a class="btn" href="#">Заказать</a>
+        </div>
+        <div class="services-item services-item__presentations">
+          <h2 class="services-item__name">Презентации</h2>
+          <p>Вы даже не подозреваете, насколько вы изумительны!</p>
+          <a class="btn" href="#">Заказать</a>
+        </div>
+      </section>
+      <div class="index-content clearfix">
+        <div class="index-content__left">
+          <p class="index-content__slogan"><b>Мы — маленькая, но гордая дизайн-студия из Краснодара.</b></p>
+          <p class="index-content__text">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+          <div class="index-content__services">
+            <p><b>Выполняем заказы на разработку:</b></p>
             <ul>
               <li>
                 Веб-сайтов любой сложности
@@ -97,50 +97,51 @@
             </ul>
           </div>
         </div>
-        <div class="index-content-right">
-          <div class="index-content-logo">
+        <div class="index-content__right">
+          <div class="index-content__logo">
             <img src="img/nerds-illustration.jpg" width="360" height="208" alt="Нёрдс">
           </div>
-          <b>С 2004 года Любим точность во всем:</b>
-          <ul>
+          <p class="index-content__percent-title"><b>С 2004 года Любим точность во всем:</b></p>
+          <ul class="index-content__percent">
             <li>
-              <b>146%</b> Уровень самоотдачи
+              <b>146<sup>%</sup></b>
+              <p>Уровень самоотдачи</p>
             </li>
             <li>
-              <b>100%</b> Соблюдение сроков
+              <b>100<sup>%</sup></b>
+              <p>Соблюдение сроков</p>
             </li>
             <li>
-              <b>50%</b> Минимальная предоплата
+              <b>50<sup>%</sup></b>
+              <p>Минимальная предоплата</p>
             </li>
           </ul>
         </div>
       </div>
-      <div class="container">
-        <section class="products-logo">
-          <ul>
-            <li class="products-logo__item">
-              <a class="htmlacademy-logo" href="https://htmlacademy.ru/intensive/htmlcss">
-                <img src="img/logo-1.png" width="199" height="68" alt="Htmlacademy">
-              </a>
-            </li>
-            <li class="products-logo__item">
-              <a class="borodinski-logo" href="#">
-                <img src="img/logo-2.png" width="209" height="90" alt="Borodinski">
-              </a>
-            </li>
-            <li class="products-logo__item">
-              <a class="pink-logo" href="#">
-                <img src="img/logo-3.png" width="185" height="52" alt="Pink">
-              </a>
-            </li>
-            <li class="products-logo__item">
-              <a class="mishka-logo" href="#">
-                <img src="img/logo-4.png" width="173" height="84" alt="Mishka">
-              </a>
-            </li>
-          </ul>
-        </section>
-      </div>
+      <section class="products-logo">
+        <ul class="clearfix">
+          <li class="products-logo__item">
+            <a href="https://htmlacademy.ru/intensive/htmlcss">
+              <img src="img/htmlacademy-logo.png" width="260" height="180" alt="Htmlacademy">
+            </a>
+          </li>
+          <li class="products-logo__item">
+            <a href="#">
+              <img src="img/barbershop-logo.png" width="260" height="180" alt="Borodinski">
+            </a>
+          </li>
+          <li class="products-logo__item">
+            <a href="#">
+              <img src="img/pink-logo.png" width="260" height="180" alt="Pink">
+            </a>
+          </li>
+          <li class="products-logo__item">
+            <a href="#">
+              <img src="img/mishka-logo.png" width="260" height="180" alt="Mishka">
+            </a>
+          </li>
+        </ul>
+      </section>
     </main>
     <footer class="page-footer">
       <div class="page-footer__top">
@@ -149,8 +150,8 @@
         </div>
         <div class="page-footer__contacts">
           <b>Nёrds design studio</b>
-          <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
-          <p>тел. +7(812) 275-75-75</p>
+          <p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8</p>
+          <p>тел. +7 (812) 275-75-75</p>
           <a class="btn" href="#">Напишите нам</a>
         </div>
       </div>
